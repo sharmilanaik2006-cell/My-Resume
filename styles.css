@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #ffe8ff);
+    color: #333;
+}
+
+.page-wrapper {
+    max-width: 1000px;
+    margin: 35px auto;
+    display: flex;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(120, 70, 250, 0.25);
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 280px;
+    background: linear-gradient(180deg, #6b50ff, #b423ff);
+    color: #ffffff;
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.profile-area {
+    margin-bottom: 25px;
+}
+
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 18px;
+    border: 4px solid rgba(255,255,255,0.85);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-section h2 {
+    font-size: 17px;
+    margin: 12px 0;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 6px 0;
+    border-radius: 6px;
+}
+
+.sidebar-section p {
+    margin-bottom: 7px;
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+.skill-list li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 12px;
+    border-radius: 50px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+}
+
+.content {
+    flex: 1;
+    padding: 35px 35px;
+    background: #fafaff;
+}
+
+.content-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #5825ff;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f3e8ff, #ece6ff);
+    border-left: 5px solid #b423ff;
+    box-shadow: 0 3px 10px rgba(150, 80, 255, 0.15);
+}
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 22px;
+
+    border: 2px solid transparent;
+    background-image: 
+        linear-gradient(#ffffff, #ffffff),
+        radial-gradient(circle at top left, #8b5cff, #ff71c1);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    box-shadow: 0 8px 20px rgba(120, 60, 255, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(120, 60, 255, 0.25);
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #3b2368;
+    background: linear-gradient(90deg, #e7dbff, #ffe1fb);
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.card p,
+.card li {
+    font-size: 14px;
+    color: #4a4466;
+    line-height: 1.6;
+}
+
+.card ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
